@@ -13,3 +13,10 @@ phases:
   post_build:
     commands:
       - aws s3 sync . s3://node-code-deploy --acl 'public-read' --delete
+
+artifacts:
+  files:
+    - '**/*'
+
+  discard-paths: yes
+  base-directory: '/'
