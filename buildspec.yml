@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - echo "run build command"
+  post_build:
+    commands:
+      - aws s3 sync . s3://node-code-deploy --acl 'public-read' --delete
