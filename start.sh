@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/ec2-user/node-app
+cd /home/ubuntu/node-app
 node app.js
