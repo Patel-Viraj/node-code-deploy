@@ -19,10 +19,7 @@ phases:
     commands:
         - echo Build started 
 #         - ng build
-        - sonar-scanner
-            -Dsonar.login=sqp_f29b48acfd902e30987476ffc3e39cb5282d5c71
-            -Dsonar.host.url=http://65.0.129.38:9000/
-            -Dsonar.projectKey=Test_Project
+        - sonar-scanner -Dsonar.login=sqp_d6dc97f7acbd972303f95e88631f3d8d24c346c9 -Dsonar.host.url=http://65.0.129.38:9000 -Dsonar.projectKey=test
 # artifacts:
 #     files:
 #         - '**/*'
